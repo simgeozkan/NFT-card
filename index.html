@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-size: 18px;
+      font-family: 'Outfit', sans-serif;
+
+    }
+
+    .container {
+      width: 100%;
+      height: 100vh;
+      background-color: hsl(217, 54%, 11%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+
+      width: 280px;
+      height: 500px;
+      background-color: hsl(216, 50%, 16%);
+      border-radius: 10px;
+      padding: 1.5%;
+
+
+    }
+
+    .top-img {
+      position: relative;
+      width: 100%;
+      height: 50%;
+
+    }
+
+
+
+
+    .top {
+
+
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+    }
+
+
+
+    .top-img-green div {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: 5px;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.2s ease-in;
+
+    }
+
+    .top-img-green div:hover {
+      display: flex;
+      background-color: rgba(0, 255, 0, 0.3);
+      opacity: 1;
+      cursor: pointer;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    h4 {
+      color: hsl(0, 0%, 100%)
+    }
+
+    p,
+    span {
+      color: hsl(215, 51%, 70%);
+      font-size: 15px;
+    }
+
+    .span-1 {
+      color: hsl(178, 100%, 50%);
+      margin-right: 100px;
+    }
+
+    hr {
+      color: hsl(215, 51%, 70%);
+      border-bottom: 0.5px;
+      margin-top: 15px;
+    }
+
+    .footer {
+      display: flex;
+    }
+
+    .footer-img {
+      width: 15%;
+      height: 30%;
+      border: 1px solid white;
+      border-radius: 50px;
+      margin: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+      padding-top: 17px;
+      padding-left: 5px;
+    }
+
+    i {
+      font-size: 30px;
+      color: white;
+
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="card">
+
+      <div class="top-img">
+
+        <div class="top-img-green">
+          <div>
+            <i class="fa-regular fa-eye"></i>
+          </div>
+
+        </div>
+
+        <img class="top" src="images/image-equilibrium.jpg" alt="">
+
+      </div>
+
+      <div class="bottom-text">
+        <h4> Equilibrium #3429</h4>
+        <p> Our Equilibrium collection promotes balance and calm.</p>
+        <span class="span-1"> 0.041 ETH</span> <span class="span-2"> 3 days left</span>
+      </div>
+
+      <hr>
+
+      <div class="footer">
+        <img class="footer-img" src="images/image-avatar.png" alt="">
+        <p>Creation of </p> <a href=""> Jules Wyvern</a>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
